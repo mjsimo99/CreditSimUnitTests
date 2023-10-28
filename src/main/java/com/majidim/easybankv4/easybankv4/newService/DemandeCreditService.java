@@ -19,6 +19,10 @@ public class DemandeCreditService {
         if (validate(demendeCredit)) return creditImpl.create(demendeCredit);
         else return Optional.empty();
     }
+    public Optional<DemendeCredit> create2(DemendeCredit demendeCredit) {
+        return creditImpl.create(demendeCredit);
+    }
+
 
     public Optional<DemendeCredit> findByCode(String code) {
         return creditImpl.findByID(code);
