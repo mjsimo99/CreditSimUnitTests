@@ -8,7 +8,7 @@ import java.util.Optional;
 
 public class DemandeCreditService {
     private double Taux = 0.12D;
-    private double tolerance = 1e-3;
+    private double tolerance = 1e-2;
     private final DemandeCreditImpl creditImpl;
 
     public DemandeCreditService(DemandeCreditImpl creditImpl) {
@@ -41,19 +41,14 @@ public class DemandeCreditService {
     public Optional<DemendeCredit> update(DemendeCredit demendeCredit) {
         return creditImpl.update(demendeCredit);
     }
-    /*
 
-    public List<DemendeCredit> SearchByStatus(CreditStatus status) {
-        return creditImpl.SearchByStatus(status);
-    }
 
-    public List<DemendeCredit> SearchByDate(LocalDate date) {
-        return creditImpl.SearchBydate(date);
-    }
 
-    public List<DemendeCredit> SearchByCode(String numero) {
-        return creditImpl.SearchByCode(numero);
-    }
 
-    */
+
+
+
+
+
+
 }
