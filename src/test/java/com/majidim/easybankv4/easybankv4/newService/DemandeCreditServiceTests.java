@@ -29,6 +29,7 @@ public class DemandeCreditServiceTests {
 
         when(demandeCreditImpl.create(demandeCredit)).thenReturn(Optional.of(demandeCredit));
 
+
         Optional<DemendeCredit> result = demandeCreditService.create(demandeCredit);
 
         assertTrue(result.isPresent());
